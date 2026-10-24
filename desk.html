@@ -9,8 +9,10 @@
 <script>
   // Wide screens get a phone frame; narrow ones go straight to the app. Touch tablets get the frame alone, enlarged.
   if (innerWidth < 760 || window.top !== window.self) location.replace('./');
-  if (matchMedia('(hover: none) and (pointer: coarse)').matches) document.documentElement.className = 'tablet';
-  else history.replaceState(null, '', './');
+  else {
+    if (matchMedia('(hover: none) and (pointer: coarse)').matches) document.documentElement.className = 'tablet';
+    history.replaceState(null, '', './');
+  }
 </script>
 <style>
   * { box-sizing: border-box; margin: 0; }
