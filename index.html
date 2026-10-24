@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#ffffff">
+<title>남세종 QUEST</title>
+<meta name="description" content="남세종종합청소년센터를 하나씩 탐험하는 퀘스트 앱">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="남세종 QUEST">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script>
+  // On the website, wide desktop screens show the app inside a phone frame (desk.html).
+  if (/^https?:$/.test(location.protocol) && location.hostname !== 'localhost' && window.top === window.self && innerWidth >= 760) location.replace('desk.html');
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="style.css?v=8">
+</head>
+<body>
+<div id="app"></div>
+<div id="stack"></div>
+<div id="sheets"></div>
+<div id="toasts"></div>
+<canvas id="confetti"></canvas>
+<script src="data.js?v=8"></script>
+<script src="gallery.js?v=8"></script>
+<script src="programs_real.js?v=8"></script>
+<script src="notices_real.js?v=8"></script>
+<script src="app.js?v=8"></script>
+</body>
+</html>
