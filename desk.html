@@ -7,8 +7,8 @@
 <link rel="icon" href="icon-192.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <script>
-  // Wide screens get a phone frame; narrow ones go straight to the app.
-  if (innerWidth < 760 || window.top !== window.self) location.replace('./');
+  // Wide mouse screens get a phone frame; phones and touch tablets go straight to the app.
+  if (innerWidth < 760 || window.top !== window.self || matchMedia('(hover: none) and (pointer: coarse)').matches) location.replace('./');
   else history.replaceState(null, '', './');
 </script>
 <style>
